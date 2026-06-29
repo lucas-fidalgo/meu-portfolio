@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas Fidalgo - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<!-- o id "theme-root" é para auxiliar a alteração do tema -->
+<body id="theme-root" class="light-theme">
+
+    <!-- menu de navegação -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">Lucas Renato Fidalgo - Portfólio</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <!-- botão para alternar o tema -->
+            <button id="theme-toggle" class="btn-toggle">Alterar Tema</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- seção 1: sobre mim -->
+        <section id="sobre" class="section">
+            <h2>Sobre Mim</h2>
+            <p>
+                Iniciei minha jornada nos estudos de programação e ciência da computação em 2019, focando no desenvolvimento de uma base sólida e autônoma.
+                Ao longo dos anos, descobri uma forte afinidade por engenharia de software de baixo nível e desenvolvimento de jogos, áreas onde posso aplicar
+                lógica complexa e otimização diretamente no código.
+            </p>
+            <br>
+            <p>
+                Tenho um perfil de aprendizado prático e focado na resolução independente de problemas, preferindo o estudo direto de documentações para a
+                construção de projetos. Fora do ambiente de desenvolvimento, busco manter uma rotina equilibrada dedicando meu tempo livre ao aprendizado do
+                idioma japonês e à prática do violino, meu principal hobbie.
+            </p>
+        </section>
+
+        <!-- seção 2: formação -->
+        <section id="formacao" class="section">
+            <h2>Formação</h2>
+            <ul>
+                <li><strong>Ciência da Computação</strong> - Universiade Tuiuti do Paraná <em>2019-2022 (Incompleto)</em></li>
+                <li><strong>Análise e Desenvolvimento de Sistemas</strong> - Uninter <em>2025-(Em andamento)</em></li>
+                <li><strong>Java Programming I</strong> - University of Helsinki MOOC.fi</li>
+                <li><strong>Java Programming II</strong> - University of Helsinki MOOC.fi</li>
+            </ul>
+        </section>
+
+        <!-- seção 3: portfólio -->
+        <section id="portfolio" class="section">
+            <h2>Portfólio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h3>Projeto 1: Emulador CHIP-8</h3>
+                    <p>Emulador/interpretador da linguagem de programação CHIP-8, escrito na linguagem de programação Rust.</p>
+                    <a href="https://github.com/lukefidalgo/EMU-8" target="_blank">Ver Repositório</a>
+                </div>
+                <div class="portfolio-item">
+                    <h3>Projeto 2: Clone do jogo Pong</h3>
+                    <p>Implementação do clássico jogo Pong escrito em C utilizando a biblioteca raylib.</p>
+                    <a href="https://github.com/lucas-fidalgo/pong" target="_blank">Ver Repositório</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- seção 4: contato -->
+        <section id="contato" class="section">
+            <h2>Contato</h2>
+            <!-- novalidate impede a validação padrão do HTML -->
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+            <!-- mensagem de feedback oculta por padrão -->
+            <div id="form-feedback" class="hidden"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Desenvolvido por Lucas Renato Fidalgo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
